@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Pink FLoyd</title>
+    <!-- Aquí podrías añadir tu CSS y JavaScript -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Aquí va el menú de navegación -->
+            <ul>
+                <li>HOME</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h1>Bienvenido a tu blog sobre Pink Floyd</h1>
+            <!-- Contenido de la sección inicio -->
+        </section>
+
+        <h1>Elige qué album quieres visitar</h1>
+        <button (click)="showTheWall()">The Wall</button>
+        <button (click)="showTheDarkSideOfTheMoon()">The Dark Side of the Moon</button>
+        <button (click)="showMeadle()">Meadle</button>
+
+        <section *ngIf="album === 'The Wall'">
+          <section>
+            <img width="500" [src]="theWall.img">
+            <h2>{{theWall.name}}</h2>
+            <h4>{{theWall.year}}</h4>
+
+          </section>
+            <p *ngFor="let song of songs; index as i"> {{i}}, {{song}}</p>
+        </section>
+
+        <section *ngIf="album === 'The Dark Side Of The Moon'">
+            <h2>The Dark Side Of The Moon</h2>
+
+        </section>
+
+        <section *ngIf="album === 'Meadle'">
+            <h2>Meadle</h2>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Aquí va la información del pie de página -->
+    </footer>
+</body>
+</html>

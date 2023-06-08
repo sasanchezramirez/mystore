@@ -24,11 +24,11 @@
         </section>
 
         <h1>Elige qué album quieres visitar</h1>
-        <button (click)="showTheWall()">The Wall</button>
-        <button (click)="showTheDarkSideOfTheMoon()">The Dark Side of the Moon</button>
-        <button (click)="showMeadle()">Meadle</button>
+        <button class="pink-floyd-button" (click)="showTheWall()">The Wall</button>
+        <button class="pink-floyd-button" (click)="showTheDarkSideOfTheMoon()">The Dark Side of the Moon</button>
+        <button class="pink-floyd-button" (click)="showMeadle()">Meadle</button>
 
-        <section *ngIf="album === 'The Wall'">
+        <div class="the-wall" *ngIf="album === 'The Wall'">
           <section>
             <img width="500" [src]="theWall.img">
             <h2>{{theWall.name}}</h2>
@@ -36,16 +36,19 @@
 
           </section>
             <p *ngFor="let song of songs; index as i"> {{i}}, {{song}}</p>
-        </section>
+        </div>
 
-        <section *ngIf="album === 'The Dark Side Of The Moon'">
-            <h2>The Dark Side Of The Moon</h2>
+        <div class="dark-side" *ngIf="album === 'The Dark Side Of The Moon'">
+          <img width="500" [src]="theDarkSideOfTheMoon.img">
+            <h2>{{theDarkSideOfTheMoon.name}}</h2>
+            <h4>{{theDarkSideOfTheMoon.year}}</h4>
+        </div>
 
-        </section>
-
-        <section *ngIf="album === 'Meadle'">
-            <h2>Meadle</h2>
-        </section>
+        <div class="meddle" *ngIf="album === 'Meddle'">
+          <img width="500" [src]="meddle.img">
+            <h2>{{meddle.name}}</h2>
+            <h4>{{meddle.year}}</h4>
+        </div>
     </main>
 
     <footer>

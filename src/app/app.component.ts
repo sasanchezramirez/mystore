@@ -17,7 +17,7 @@ export class AppComponent {
     this.album = "The Dark Side Of The Moon"
   }
   showMeadle() {
-    this.album = "Meadle"
+    this.album = "Meddle"
   }
 
   like(){
@@ -34,7 +34,16 @@ export class AppComponent {
     name: 'The Wall',
     year: 1979,
     img: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/01/18/16740641595837.jpg'
-
+    }
+  theDarkSideOfTheMoon: album = {
+    name: 'The Dark Side Of The Moon',
+    year: 1973,
+    img: 'https://www.latercera.com/resizer/8Tc3uWqI4WgWON5xT8jHWdCsGKU=/420x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/MKLFMFLWYJB5BLSHLP3WPTOFGU.jpg'
+    }
+  meddle: album = {
+    name: 'Meddle',
+    year: 1970,
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/MeddleCover.jpeg/220px-MeddleCover.jpeg'
     }
 }
 

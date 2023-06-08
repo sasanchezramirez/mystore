@@ -1,0 +1,93 @@
+.the-wall {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.the-wall img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.the-wall h2 {
+  font-size: 96px;
+  margin-bottom: 10px;
+}
+
+.the-wall h4 {
+  font-size: 44px;
+}
+
+.dark-side {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark-side img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+}
+
+.dark-side h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dark-side h4 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.meddle {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.meddle img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
+}
+
+.meddle h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.meddle h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pink-floyd-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.pink-floyd-button:hover {
+  background-color: #ff2b72;
+  cursor: pointer;
+}
+
+
+
